@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tudo Fala</title>
+<style>
+/* Estilos básicos para visualização */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+header {
+background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-blue-wave-art-a-3d-illustration-with-open-space-for-personalized-image_3737834.jpg');
+background-size: cover;
+background-position: center;
+background-color: #5296b1;
+color: white;
+text-align: center;
+padding: 2em;
+position: relative;
+}
+header::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for readability */
+}
+header > * {
+position: relative; /* Ensure content appears above the overlay */
+}
+.header-content {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1em;
+flex-direction: row-reverse; /* Reverse order to place logo on the left */
+}
+.header-content h1 {
+margin: 0;
+}
+.header-content img {
+width: 10%;
+}
+nav {
+background-color: #50979e;
+padding: 1em;
+text-align: center;
+}
+nav a {
+color: white;
+margin: 0 1.5em;
+text-decoration: none;
+font-weight: bold;
+}
+.container {
+width: 80%;
+margin: auto;
+padding: 2em;
+}
+.section {
+margin-bottom: 2em;
+}
+.service-card {
+border: 1px solid #ddd;
+padding: 1.5em;
+margin-bottom: 1em;
+border-radius: 5px;
+background-color: #f9f9f9;
+}
+.testimonial {
+font-style: italic;
+background-color: #e9ecef;
+padding: 1em;
+margin-bottom: 1em;
+border-left: 5px solid #6e7070;
+}
+form {
+display: flex;
+flex-direction: column;
+gap: 1em;
+max-width: 600px;
+}
+input, textarea, button {
+padding: 0.5em;
+font-size: 1em;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+button {
+background-color: #50979e;
+color: white;
+border: none;
+cursor: pointer;
+padding: 1em;
+}
+button:hover {
+background-color: #21867a;
+}
+footer {
+background-color: #264653;
+color: white;
+text-align: center;
+padding: 1em;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+.social-links {
+margin-top: 1em;
+}
+.social-links a {
+color: white;
+margin: 0 1em;
+text-decoration: none;
+font-weight: bold;
+}
+.social-links a:hover {
+color: #2a9d8f;
+}
+</style>
+</head>
+<body>
+<!-- Cabeçalho -->
+<header>
+<div class="header-content">
+<img src="LogoTudoFa.png" alt="Logo Tudo Fala">
+<h1>Tudo Fala</h1>
+</div>
+<p>Transforme sua comunicação com palestras, workshops e consultorias especializadas</p>
+</header>
+
+<!-- Navegação -->
+<nav>
+<a href="#home">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<!-- Seção Principal -->
+<div class="container">
+<section id="home" class="section">
+<h2>Fale com Clareza, Conquiste com Confiança</h2>
+<p>Seja no ambiente profissional ou pessoal, a comunicação eficaz é a chave para o sucesso. Oferecemos palestras inspiradoras, workshops práticos e consultorias personalizadas para ajudar você a se expressar com segurança e impacto.</p>
+<img width="80%" src="https://i0.wp.com/carreiras.pucminas.br/med/2021/09/Conteudo-B.jpg?resize=1100%2C700&ssl=1" alt="">
+</section>
+
+<!-- Seção de Serviços -->
+<section id="servicos" class="section">
+<h2>Nossos Serviços</h2>
+<div class="service-card">
+<h3>Palestras Motivacionais</h3>
+<p>Palestras dinâmicas para empresas e eventos, abordando técnicas de oratória, persuasão e storytelling.</p>
+</div>
+<div class="service-card">
+<h3>Workshops Práticos</h3>
+<p>Treinamentos interativos para desenvolver habilidades de comunicação, como fala em público e gestão de conflitos.</p>
+</div>
+<div class="service-card">
+<h3>Consultorias Personalizadas</h3>
+<p>Acompanhamento individual ou em grupo para aprimorar sua comunicação em apresentações, negociações ou liderança.</p>
+</div>
+</section>
+
+<!-- Seção de Depoimentos -->
+<section id="depoimentos" class="section">
+<h2>O Que Nossos Clientes Dizem</h2>
+<div class="testimonial">
+<p>"O workshop de oratória mudou minha forma de apresentar projetos. Hoje, falo com muito mais confiança!"</p>
+<p><strong>- João Silva, Gerente de Projetos</strong></p>
+</div>
+<div class="testimonial">
+<p>"A consultoria personalizada me ajudou a liderar reuniões com clareza e impacto. Recomendo!"</p>
+<p><strong>- Ana Costa, Empreendedora</strong></p>
+</div>
+</section>
+
+<!-- Formulário de Contato -->
+<section id="contato" class="section">
+<h2>Entre em Contato</h2>
+<p>Quer melhorar sua comunicação ou trazer nossos serviços para sua empresa? Preencha o formulário abaixo!</p>
+<form action="submit" method="post">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="servico">Interesse:</label>
+<select id="servico" name="servico" required>
+<option value="">Selecione um serviço</option>
+<option value="palestra">Palestra</option>
+<option value="workshop">Workshop</option>
+<option value="consultoria">Consultoria</option>
+</select>
+
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+</section>
+</div>
+
+<!-- Rodapé -->
+<footer>
+<p>© 2025 Tudo Fala. Todos os direitos reservados.</p>
+<p>Desenvolvendo habilidades de comunicação para um mundo mais conectado.</p>
+<div class="social-links">
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">YouTube</a>
+</div>
+</footer>
+</body>
+</html>
